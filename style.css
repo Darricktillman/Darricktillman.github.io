@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(0, 0, 0);
+    background: rgb(240, 62, 3);
    margin: 0 auto;
    margin-bottom: 20px;
    border-radius: 30px;
@@ -24,6 +24,8 @@ h1 {
     color: rgb(246, 135, 8);
     flex: 1;
     margin: 0;
+    color: white;
+  text-shadow: 2px 2px 4px #ff5500;
 }
 #nav-ul {
     list-style-image: none;
@@ -39,7 +41,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
+    background: rgb(226, 98, 6);
     display: flex;
 }
 .sidebar {
@@ -80,7 +82,7 @@ h2, h3 {
         }
 
         #portfolio li:hover {
-            background: #eee;
+            background: #fd6500;
         }
 
         #portfolio a {
