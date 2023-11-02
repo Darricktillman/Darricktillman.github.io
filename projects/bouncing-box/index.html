@@ -73,9 +73,16 @@
 			turn it around! 
 			*/
 			function update() {
-   				positionX = positionX + 10;
-   				moveBoxTo(speed);
+   				positionX = positionX + speed;
+   				moveBoxTo(positionX);
+				   if(positionX > boardWidth){
+	speed = -speed;
+}
+else if(positionX < 0){
+	speed = -speed;
+}
 };
+
              
 
 			/* 
@@ -85,9 +92,10 @@
 			*/
 			function handleBoxClick() {
 		     positionX = 0
+			 speed = speed + 3
 			 points = points + 1;
 			changeBoxText(points);
-			speed = speed + 1
+			
 			}
 		})();
 	</script>
